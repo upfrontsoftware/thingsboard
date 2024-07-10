@@ -13,6 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@import '../../../../scss/constants';
+
 .mat-button-toggle-group.tb-script-lang-toggle-group {
   &.mat-button-toggle-group-appearance-standard {
     border: none;
@@ -42,7 +44,7 @@
     margin: 2px;
   }
   .mat-button-toggle-checked .mat-button-toggle-button {
-    background-color: #305680;
+    background-color: $tb-primary-color;
     color: #fff;
     border-radius: 16px;
     margin-left: 2px;

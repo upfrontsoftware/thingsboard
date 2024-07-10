@@ -182,7 +182,7 @@ export class SentTableConfigResolver implements Resolve<EntityTableConfig<Notifi
     };
     switch (status) {
       case NotificationRequestStatus.SCHEDULED:
-        styleObj.color = '#305680';
+        styleObj.color = process.env.CUSTOM_THEME_COLOR || '#305680';
         break;
       case NotificationRequestStatus.PROCESSING:
         styleObj.color = '#D47D18';

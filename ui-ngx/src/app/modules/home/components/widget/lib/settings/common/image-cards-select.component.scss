@@ -13,6 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@import "../../../../../../../scss/constants";
+
 .tb-image-cards-select.tb-form-panel {
   .tb-form-row {
     transition: all .3s;
@@ -103,18 +105,18 @@
     }
     &.selected {
       .tb-image-cards-option-background {
-        background: #305680;
+        background: $tb-primary-color;
         opacity: 0.04;
       }
       &:before {
         content: "";
-        border: 1px solid #305680;
+        border: 1px solid $tb-primary-color;
         opacity: 0.32;
       }
       .tb-image-cards-option-title {
         font-size: 13px;
         font-weight: 500;
-        color: #305680;
+        color: $tb-primary-color;
       }
     }
   }

@@ -13,6 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@import '../../../../../../../scss/constants';
+
 .tb-getting-started-completed-dialog {
   .mat-mdc-dialog-container .mdc-dialog__surface {
     border-radius: 8px;
@@ -39,7 +41,7 @@
     font-size: 36px;
     text-align: center;
     border-radius: 50%;
-    border: 2px solid #305680;
+    border: 2px solid $tb-primary-color;
     background: #FFFFFF;
   }
 

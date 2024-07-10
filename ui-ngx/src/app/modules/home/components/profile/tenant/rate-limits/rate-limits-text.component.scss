@@ -13,6 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@import '../../../../../../../scss/constants';
+
 :host {
   .tb-rate-limits-text {
     overflow: hidden;
@@ -35,7 +37,7 @@
       border-radius: 4px;
       padding-left: 4px;
       padding-right: 4px;
-      color: #305680;
+      color: $tb-primary-color;
     }
   }
 }
