@@ -34,6 +34,7 @@ import { RouterTabsComponent } from '@home/components/router-tabs.component';
 import { FormBuilder } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { isDefined, isDefinedAndNotNull } from '@core/utils';
+import { environment as env } from '@env/environment';
 
 @Component({
   selector: 'tb-home',
@@ -52,7 +53,7 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
   sidenavMode: 'over' | 'push' | 'side' = 'side';
   sidenavOpened = true;
 
-  logo = process.env.CUSTOM_LOGO_PATH || 'assets/logo_title_white.svg';
+  logo = env.CUSTOM_LOGO_PATH || 'assets/logo_title_white.svg';
 
   @ViewChild('sidenav')
   sidenav: MatSidenav;

@@ -14,17 +14,6 @@
  * limitations under the License.
  */
 
- @function env($var) {
-  $value: getenv($var);
-  @if $value != null {
-    @return $value;
-  } else {
-    @warn "Environment variable `{$var}` not found.";
-    @return null;
-  }
-}
-
-
 $mat-xs: "screen and (max-width: 599px)";
 $mat-sm: "screen and (min-width: 600px) and (max-width: 959px)";
 $mat-md: "screen and (min-width: 960px) and (max-width: 1279px)";
@@ -43,7 +32,7 @@ $mat-md-lg: "screen and (min-width: 960px) and (max-width: 1819px)";
 
 $primary-hue-3: rgb(207, 216, 220) !default;
 
-$tb-primary-color: env('CUSTOM_THEME_COLOR');
+$tb-primary-color: #54a8f1;
 $tb-secondary-color: #527dad;
 $tb-hue3-color: #a7c1de;
 

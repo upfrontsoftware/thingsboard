@@ -18,8 +18,9 @@ import { indigo, deepOrange } from '@material-ui/core/colors';
 import { ThemeOptions } from '@material-ui/core/styles';
 import { PaletteOptions } from '@material-ui/core/styles/createPalette';
 import { mergeDeep } from '@core/utils';
+import { environment as env } from '@env/environment';
 
-const PRIMARY_COLOR = process.env.CUSTOM_THEME_COLOR || '#305680';
+const PRIMARY_COLOR = env.CUSTOM_THEME_COLOR || '#305680';
 const SECONDARY_COLOR = '#527dad';
 const HUE3_COLOR = '#a7c1de';
 

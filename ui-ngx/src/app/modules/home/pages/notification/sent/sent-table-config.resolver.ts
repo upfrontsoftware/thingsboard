@@ -47,6 +47,7 @@ import {
 } from '@home/pages/notification/sent/sent-error-dialog.component';
 import { ActivatedRouteSnapshot, Resolve } from '@angular/router';
 import { Injectable } from '@angular/core';
+import { environment as env } from '@env/environment';
 
 @Injectable()
 export class SentTableConfigResolver implements Resolve<EntityTableConfig<NotificationRequest, PageLink, NotificationRequestInfo>> {
@@ -182,7 +183,7 @@ export class SentTableConfigResolver implements Resolve<EntityTableConfig<Notifi
     };
     switch (status) {
       case NotificationRequestStatus.SCHEDULED:
-        styleObj.color = process.env.CUSTOM_THEME_COLOR || '#305680';
+        styleObj.color = env.CUSTOM_THEME_COLOR || '#305680';
         break;
       case NotificationRequestStatus.PROCESSING:
         styleObj.color = '#D47D18';

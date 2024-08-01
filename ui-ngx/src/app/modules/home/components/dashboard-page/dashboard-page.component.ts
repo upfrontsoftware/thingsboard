@@ -259,7 +259,7 @@ export class DashboardPageComponent extends PageComponent implements IDashboardC
   rightLayoutSize: {width: string; height: string} = {width: '100%', height: '100%'};
 
   private dashboardLogoCache: SafeUrl;
-  private defaultDashboardLogo = process.env.CUSTOM_LOGO_PATH || 'assets/logo_title_white.svg';
+  private defaultDashboardLogo = env.CUSTOM_LOGO_PATH || 'assets/logo_title_white.svg';
 
   private dashboardResize$: ResizeObserver;
 

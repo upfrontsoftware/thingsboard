@@ -14,20 +14,14 @@
 /// limitations under the License.
 ///
 
-import { Component } from '@angular/core';
-import { environment as env } from '@env/environment';
-
-@Component({
-  selector: 'tb-logo',
-  templateUrl: './logo.component.html',
-  styleUrls: ['./logo.component.scss']
-})
-export class LogoComponent {
-
-  logo = env.CUSTOM_LOGO_PATH || 'assets/logo_title_white.svg';
-
-  gotoThingsboard(): void {
-    window.open('https://thingsboard.io', '_blank');
-  }
-
-}
+export const environment = {
+  appTitle: 'ThingsBoard',
+  production: true,
+// @ts-ignore
+  tbVersion: TB_VERSION,
+// @ts-ignore
+  supportedLangs: SUPPORTED_LANGS,
+  defaultLang: 'en_US',
+  CUSTOM_LOGO_PATH: "${CUSTOM_LOGO_PATH}",
+  CUSTOM_THEME_COLOR: "${CUSTOM_THEME_COLOR}"
+};
